@@ -1,6 +1,6 @@
 {
   "name": "homo-digitalis",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "As simple as it gets",
   "main": "./dist/index.js",
   "typings": "./dist/index.js",

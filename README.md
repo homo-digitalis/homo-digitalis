@@ -1,15 +1,15 @@
 # Homo Digitalis
 
-This is meant to provide an opportunity for everyone to explore topics like **Natural Language Processing**, **Artificial Intelligence**, **Deep Learning** etc.
+Hi I'm Homo Digitalis
 
-Homo Digitalis leverages especially the [nlp-with-actions](https://www.npmjs.com/package/nlp-with-actions) package and the [nlp-trainer](https://www.npmjs.com/package/nlp-trainer) package in order to give appropriate answers.   
-  
+This package represents one way for me to answer text and voice messages
+
+I invite people to experiment and to explore topics like **Natural Language Processing**, **Artificial Intelligence**, **Deep Learning** etc.
 
 
 ## Basic Usage
-To check out what Homo Digitalis can do for you, please check the executable specifications - aka unit tests [here](https://github.com/homo-digitalis/homo-digitalis/blob/master/src/homo-digitalis.spec.ts).
+To check out what I can do for you, please check my executable specifications - aka unit tests [here](https://github.com/homo-digitalis/homo-digitalis/blob/master/src/homo-digitalis.spec.ts).
   
-
 
 
 ## Feedback
