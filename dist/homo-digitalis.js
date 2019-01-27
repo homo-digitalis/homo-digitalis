@@ -11,11 +11,11 @@ class HomoDigitalis {
         const trainingData = await this.nlpTrainer.getIntents(trainingDataID);
         await this.processor.learn(trainingData);
     }
-    async respond(input) {
+    async answer(input) {
         const answer = await this.processor.process(input);
         return answer;
     }
-    async respondWithDetails(input) {
+    async answerWithDetails(input) {
         const answerExtended = await this.processor.processAndDeliverDetails(input);
         return answerExtended;
     }

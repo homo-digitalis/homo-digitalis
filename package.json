@@ -1,6 +1,6 @@
 {
   "name": "homo-digitalis",
-  "version": "1.1.0",
+  "version": "2.0.1",
   "description": "As simple as it gets",
   "main": "./dist/index.js",
   "typings": "./dist/index.js",
@@ -8,21 +8,24 @@
     "test": "jest",
     "test:cov": "jest --coverage",
     "tslint": "tslint -p ./",
-    "bp": "tsc && npm publish"
+    "bp": "npm run tslint && rm -rf ./dist && rm -rf ./node_modules && npm i --save && tsc && npm publish"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/monique-schlaumann/homo-digitalis"
+    "url": "https://github.com/homo-digitalis/homo-digitalis"
   },
   "keywords": [
     "Homo Digitalis",
+    "Homo Digitalis Education",
+    "Open Source Education",
     "Natural Language Processing Education",
+    "Artificial Intelligence",
     "NLP Education",
     "AI Education",
-    "Artificial Intelligence"
+    "IT Education"
   ],
-  "author": "Monique Schlaumann",
-  "license": "MIT",
+  "author": "homo-digitalis@gmx.de",
+  "license": "GNU GPL",
   "husky": {
     "hooks": {
       "pre-commit": "npm run tslint && npm run test:cov"

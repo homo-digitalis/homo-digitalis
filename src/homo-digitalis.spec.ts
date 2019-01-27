@@ -8,7 +8,7 @@ describe("HomoDigitalis", () => {
         const homoDigitalis: HomoDigitalis = new HomoDigitalis()
 
         await homoDigitalis.learn("exampleMap")
-        const answer: IAnswer = await homoDigitalis.respond("hi")
+        const answer: IAnswer = await homoDigitalis.answer("hi")
 
         expect(answer.text)
             .toEqual("hey man")
@@ -23,7 +23,7 @@ describe("HomoDigitalis", () => {
         const homoDigitalis: HomoDigitalis = new HomoDigitalis()
         await homoDigitalis.learn("exampleMap")
 
-        const answerExtended: IAnswerExtended = await homoDigitalis.respondWithDetails("hi")
+        const answerExtended: IAnswerExtended = await homoDigitalis.answerWithDetails("hi")
 
         expect(answerExtended.text)
             .toEqual("hey man")

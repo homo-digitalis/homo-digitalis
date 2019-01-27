@@ -4,6 +4,6 @@ export declare class HomoDigitalis {
     private readonly nlpTrainer;
     constructor();
     learn(trainingDataID: string): Promise<void>;
-    respond(input: string): Promise<IAnswer>;
-    respondWithDetails(input: string): Promise<IAnswerExtended>;
+    answer(input: string): Promise<IAnswer>;
+    answerWithDetails(input: string): Promise<IAnswerExtended>;
 }

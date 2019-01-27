@@ -16,7 +16,7 @@ export class HomoDigitalis {
         await this.processor.learn(trainingData)
     }
 
-    public async respond(input: string): Promise<IAnswer> {
+    public async answer(input: string): Promise<IAnswer> {
 
         const answer: IAnswer = await this.processor.process(input)
 
@@ -24,7 +24,7 @@ export class HomoDigitalis {
 
     }
 
-    public async respondWithDetails(input: string): Promise<IAnswerExtended> {
+    public async answerWithDetails(input: string): Promise<IAnswerExtended> {
 
         const answerExtended: IAnswerExtended = await this.processor.processAndDeliverDetails(input)
 
