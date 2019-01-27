@@ -1,6 +1,6 @@
 {
   "name": "homo-digitalis",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "As simple as it gets",
   "main": "./dist/index.js",
   "typings": "./dist/index.js",
@@ -34,6 +34,7 @@
   "dependencies": {
     "@types/jest": "^21.0.0",
     "@types/node": "^10.12.18",
+    "homo-digitalis-curricula-service": "^0.5.0",
     "jest": "^23.6.0",
     "nlp-trainer": "^2.0.4",
     "nlp-with-actions": "^3.2.3",

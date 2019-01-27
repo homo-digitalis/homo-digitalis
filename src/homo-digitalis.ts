@@ -1,4 +1,4 @@
-import { NLPTrainer } from "nlp-trainer"
+import { IIntent, NLPTrainer } from "nlp-trainer"
 import { IAnswer, IAnswerExtended, Processor } from "nlp-with-actions"
 
 export class HomoDigitalis {
@@ -11,8 +11,7 @@ export class HomoDigitalis {
         this.nlpTrainer = new NLPTrainer()
     }
 
-    public async learn(trainingDataID: string): Promise<void> {
-        const trainingData: any = await this.nlpTrainer.getIntents(trainingDataID)
+    public async learn(trainingData: IIntent[]): Promise<void> {
         await this.processor.learn(trainingData)
     }
 

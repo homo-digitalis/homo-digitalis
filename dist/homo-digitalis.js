@@ -7,8 +7,7 @@ class HomoDigitalis {
         this.processor = new nlp_with_actions_1.Processor();
         this.nlpTrainer = new nlp_trainer_1.NLPTrainer();
     }
-    async learn(trainingDataID) {
-        const trainingData = await this.nlpTrainer.getIntents(trainingDataID);
+    async learn(trainingData) {
         await this.processor.learn(trainingData);
     }
     async answer(input) {
